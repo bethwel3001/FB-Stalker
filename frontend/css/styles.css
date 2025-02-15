@@ -1,14 +1,10 @@
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFFFFF;
-    color: #333333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
   
   .container {
     text-align: center;
