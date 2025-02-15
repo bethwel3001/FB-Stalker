@@ -47,7 +47,9 @@ body {
     color: #FFFFFF;
     text-decoration: none;
   }
-  
+  .menu-items a:hover{
+    text-decoration: underline green 3px solid;
+  }
   .mode-toggle {
     display: flex;
     gap: 10px;
@@ -103,7 +105,9 @@ body {
     .hamburger {
       display: block; /* Show on small screens */
     }
-  
+  header{
+    padding: 10px;
+  }
     .menu-items {
       display: none;
       flex-direction: column;
@@ -112,22 +116,35 @@ body {
       right: 0;
       background-color: #6C63FF;
       padding: 10px;
-      border-radius: 5px;
+      border-radius: 10px;
     }
   
     .menu-items a {
       padding: 10px;
+      top : 40px;
     }
-  
+    .menu-items a:hover{
+      text-decoration: underline greenyellow 2px;
+    }
     .menu-items.active {
       display: flex;
     }
   
     .container {
-      padding: 10px;
+      padding-top: 60px; /* Adjust for smaller header height */
+      height: calc(100vh - 60px); /* Adjust height for smaller header */
     }
   
     .tagline {
       font-size: 1.2rem;
     }
+  }
+  .startup-name {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    font-style: italic; /* Italic text */
+    font-size: 1.2rem; /* Adjust size as needed */
+    color: #59bf22; /* Match your theme color */
+    z-index: 1000; /* Ensure it stays above other content */
   }
