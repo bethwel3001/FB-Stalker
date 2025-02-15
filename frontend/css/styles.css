@@ -9,13 +9,16 @@ body {
   .container {
     text-align: center;
   }
+  /* logo class should be black in light mode */
   
   .logo {
     font-size: 2.5rem;
     font-weight: bold;
     color: #6C63FF;
   }
-  
+  /* body:not(.dark-mode) .logo {
+    color: #000000; 
+  } */
   .tagline {
     font-size: 1.2rem;
     margin: 20px 0;
@@ -67,7 +70,9 @@ body {
     text-align: center;
     margin: 10px;
   }
-  
+  .card:hover{
+    background-color: #6d9eae;
+  }
   .icon {
     font-size: 2rem;
     margin-bottom: 10px;

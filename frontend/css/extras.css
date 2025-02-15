@@ -19,7 +19,15 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
   }
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
   
+  .tagline, .description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  }
   .menu {
     position: relative;
   }
