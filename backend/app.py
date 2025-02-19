@@ -60,5 +60,34 @@ def profile_link_login():
 def home():
     return "Welcome to Next-Space Backend!"
 
+
+# Dummy Data for Engagement Metrics
+@app.route('/engagement-data', methods=['GET'])
+def engagement_data():
+    data = [
+        {'name': 'User A', 'interactions': 120},
+        {'name': 'User B', 'interactions': 95},
+        {'name': 'User C', 'interactions': 80},
+    ]
+    return jsonify(data)
+
+# Dummy Data for Fun Insights
+@app.route('/fun-insights', methods=['GET'])
+def fun_insights():
+    data = [
+        {'name': 'User X', 'insight': 'Top Admirer'},
+        {'name': 'User Y', 'insight': 'Curious Friend'},
+    ]
+    return jsonify(data)
+
+# Dummy Data for Notifications
+@app.route('/notifications', methods=['GET'])
+def notifications():
+    data = [
+        {'message': 'User Z viewed your profile.'},
+        {'message': 'User W liked your post.'},
+    ]
+    return jsonify(data)
+
 if __name__ == '__main__':
     app.run(debug=True)

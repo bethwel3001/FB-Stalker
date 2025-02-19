@@ -37,9 +37,31 @@
     </div>
   </div>
 
-  <!-- basic scripting -->
-  <script src=""></script>
+  <!-- ..................basic scripting ....................-->
+  <!-- 
+  updated script.js for user auth, using fetch request to communicate with the backend 
+  -->
+  <script src="./js/script.js"></script>
   <script src="./js/extras.js"></script>
+  
+  <script>
+    // Load Facebook SDK
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId: 'YOUR_FACEBOOK_APP_ID', // Replace with your Facebook App ID
+        cookie: true,
+        xfbml: true,
+        version: 'v18.0'
+      });
+    };
 
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 </body>
 </html>
