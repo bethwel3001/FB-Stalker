@@ -4,55 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Next-Space - Analytics Dashboard</title>
-  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel="stylesheet" href="./css/dashboard.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <style>/* Dashboard Styles */
-    .dashboard {
-      padding: 20px;
-    }
-    
-    .dashboard h1 {
-      font-size: 2rem;
-      color: #6C63FF;
-      margin-bottom: 20px;
-    }
-    
-    .card {
-      background-color: #F5F5F5;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    
-    .card h2 {
-      font-size: 1.5rem;
-      color: #6C63FF;
-      margin-bottom: 10px;
-    }
-    
-    .card p {
-      font-size: 1rem;
-      color: #666666;
-    }
-    
-    /* Dark Mode Adjustments */
-    body.dark-mode .card {
-      background-color: #444444;
-      color: #FFFFFF;
-    }
-    
-    body.dark-mode .card h2 {
-      color: #6C63FF;
-    }
-    
-    body.dark-mode .card p {
-      color: #CCCCCC;
-    }
-    </style>
   <header>
-    <div class="logo">Next-Space</div>
+    <div class="logo">EngageTrack</div>
     <div class="menu">
       <div class="hamburger" onclick="toggleMenu()">☰</div>
       <div class="menu-items">
@@ -91,46 +48,7 @@
       <div id="notifications">Loading...</div>
     </div>
   </div>
-
-  <script src=""></script>
-  <script>// Fetch Engagement Data
-    async function fetchEngagementData() {
-      const response = await fetch('http://127.0.0.1:5000/engagement-data');
-      const data = await response.json();
-      document.getElementById('engagement-data').innerHTML = `
-        <ul>
-          ${data.map(item => `<li>${item.name}: ${item.interactions} interactions</li>`).join('')}
-        </ul>
-      `;
-    }
-    
-    // Fetch Fun Insights
-    async function fetchFunInsights() {
-      const response = await fetch('http://127.0.0.1:5000/fun-insights');
-      const data = await response.json();
-      document.getElementById('fun-insights').innerHTML = `
-        <ul>
-          ${data.map(item => `<li>${item.name}: ${item.insight}</li>`).join('')}
-        </ul>
-      `;
-    }
-    
-    // Fetch Notifications
-    async function fetchNotifications() {
-      const response = await fetch('http://127.0.0.1:5000/notifications');
-      const data = await response.json();
-      document.getElementById('notifications').innerHTML = `
-        <ul>
-          ${data.map(item => `<li>${item.message}</li>`).join('')}
-        </ul>
-      `;
-    }
-    
-    // Load Data on Page Load
-    window.onload = function() {
-      fetchEngagementData();
-      fetchFunInsights();
-      fetchNotifications();
-    };</script>
+    <script src="./js/script.js"></script>
+    <script src="./js/extras.js"></script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard h1 {
+  font-size: 2rem;
+  color: #6C63FF;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #6C63FF;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666666;
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode .card {
+  background-color: #444444;
+  color: #FFFFFF;
+}
+
+body.dark-mode .card h2 {
+  color: #6C63FF;
+}
+
+body.dark-mode .card p {
+  color: #CCCCCC;
+}
