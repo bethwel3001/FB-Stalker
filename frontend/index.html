@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EngageTrack - Welcome</title>
   <link rel="stylesheet" href="./css/styles.css">
-<link rel="stylesheet" href="./css/extras.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/extras.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ==================== -->
+   <!-- Loading Screen -->
+   <div id="loading-screen">
+    <div class="loading-circle"></div>
+    <div class="facebook-text">NextSpace</div>
+    <div class="loading-text">For Facebook - from NextSpace Softwares</div>
+  </div>
+
+  <!-- Header Section -->
   <header>
     <div class="logo-1">EngageTrack</div>
     <div class="menu">
@@ -21,29 +28,29 @@
       </div>
     </div>
     <div class="mode-toggle" onclick="toggleMode()">
-      <span>🌙</span>
-      <span>☀️</span>
+      <span id="mode-icon">☀️</span>
     </div>
   </header>
 
-  <!-- ==================== -->
+  <!-- Main Container -->
   <div class="container">
     <div class="logo">EngageTrack</div>
     <div class="tagline">
-      Discover who’s secretly checking you out! 👀
-<br>
-      Discover your insights and post performance metrics on your profile. 
+      Discover who’s secretly checking you out! 👀<br>
+      Discover your insights and post performance metrics on your profile.
     </div>
     <div class="arrow">↓ ↓ ↓ ↓</div>
-
-    <!-- added an a tag enclosing the button to view features.html -->
     <a href="features.html">
-        <button class="continue-btn">Continue 🚀</button>
+      <button class="continue-btn">Continue 🚀</button>
     </a>
-    <!-- ////////////////// -->
   </div>
+
+  <!-- Startup Name -->
   <div class="startup-name">Next-Space</div>
-<!-- basic scripting -->
-<script src="./js/extras.js"></script>
+
+  <!-- Scripts -->
+  <script src="./js/lightDark.js"></script>
+  <script src="./js/extras.js"></script>
+  <script src="./js/loading.js"></script>
 </body>
 </html>
